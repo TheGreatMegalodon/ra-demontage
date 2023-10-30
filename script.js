@@ -28,3 +28,7 @@ function scrollToElement(id, tp=true) {
         behavior: "smooth"
     });
 }
+
+function redirectToSite(url) {
+    window.location.href = url;
+}
