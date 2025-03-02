@@ -62,7 +62,7 @@
     </div>
 </header>
 
-<body onload="urlStatus.update('')">
+<body onload="urlStatus.check(window.location.href.split('?=')[1])">
 
     <section id="privacy-policy" class="">
         <div class="background" onclick="urlStatus.update('')"></div>
