@@ -304,6 +304,7 @@ header {
 
 .first {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-items: center;
     width: 50vw;
@@ -313,8 +314,10 @@ header {
     overflow: hidden;
     box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.6);
     & img {
-        height: 450px;
-        width: auto;
+        width: 50%;
+        height: 65vh;
+        object-fit: cover;
+        object-position: -260px;
     }
     & .side-text {
         margin: 25px;
