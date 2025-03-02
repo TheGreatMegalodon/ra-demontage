@@ -28,9 +28,30 @@
             <div class="action-menu">
                 <button class="menu-button" style="font-family: 'Material Symbols Rounded';"><div class="menu-logo">g_translate</div></button>
                 <div class="dropdown">
-                    <a class="dropdown-item" style="color: rgba(238, 218, 35, 0.5); background-color: rgba(238, 224, 35, 0);"><div class="logo"><span class="over"><img src="https://raw.githubusercontent.com/TheGreatMegalodon/rafael-technik/main/storage/flags/Flag_of_Croatia.png" alt=""></span>Hrvatski</div></a>
-                    <a onclick="redirectToSite('https://www.rafael-technik.com/de')" class="dropdown-item"><div class="logo"><span class="over"><img src="https://raw.githubusercontent.com/TheGreatMegalodon/rafael-technik/main/storage/flags/Flag_of_Germany.png" alt=""></span>Njemački</div></a>
-                    <a onclick="redirectToSite('https://www.rafael-technik.com')" class="dropdown-item"><div class="logo"><span class="over"><img src="https://raw.githubusercontent.com/TheGreatMegalodon/rafael-technik/main/storage/flags/Flag_of_the_United_Kingdom.png" alt=""></span>Engleski</div></a>
+                    <a class="dropdown-item" onclick="redirectToSite('https://www.rafael-technik.com')">
+                        <div class="logo">
+                            <span class="over">
+                                <img src="https://raw.githubusercontent.com/TheGreatMegalodon/rafael-technik/main/storage/flags/Flag_of_Germany.png" alt="">
+                            </span>
+                            Njemački
+                        </div>
+                    </a>
+                    <a class="dropdown-item" onclick="redirectToSite('https://www.rafael-technik.com/en')">
+                        <div class="logo">
+                            <span class="over">
+                                <img src="https://raw.githubusercontent.com/TheGreatMegalodon/rafael-technik/main/storage/flags/Flag_of_the_United_Kingdom.png" alt="">
+                            </span>
+                            Engleski
+                        </div>
+                    </a>
+                    <a class="dropdown-item" style="color: rgba(238, 218, 35, 0.5); background-color: rgba(238, 224, 35, 0);">
+                        <div class="logo">
+                            <span class="over">
+                                <img src="https://raw.githubusercontent.com/TheGreatMegalodon/rafael-technik/main/storage/flags/Flag_of_Croatia.png" alt="">
+                            </span>
+                            Hrvatski
+                        </div>
+                    </a>
                 </div>
             </div>
             <span class="sep" style="margin-left: 10px;">language</span>
@@ -41,7 +62,7 @@
     </div>
 </header>
 
-<body>
+<body onload="urlStatus.update('')">
 
     <section id="privacy-policy" class="">
         <div class="background" onclick="urlStatus.update('')"></div>
@@ -50,9 +71,39 @@
                 <div class="name">Politika privatnosti</div>
                 <div class="leave" id="leave_privacy-policy" onclick="urlStatus.update('')">delete</div>
             </div>
-            <span style="display: flex; width: 100%; height: 1px; border-radius: 90px; background-color: rgb(238, 224, 35);"></span>
+            <span style="display: flex; width: 100%; height: 1px; border-radius: 90px; background-color: rgba(238, 224, 35, 0.4);"></span>
             <div class="content">
-                
+                Zadnje ažuriranje: 03.02.25 <br>
+                <br>
+                Dobrodošli u Rafael-Technik. Iznimno cijenimo zaštitu Vaših osobnih podataka.<br>
+                Ova politika objašnjava koje podatke prikupljamo, kako ih koristimo i vaša prava u vezi s vašim podacima. <br>
+                <br>
+                Možemo prikupljati sljedeće vrste podataka:<br>
+                	•	Osobni podaci: ime, adresa e-pošte, telefonski broj (ako se dobrovoljno unese).<br>
+                	•	Tehnički podaci: IP adresa, vrsta preglednika, operativni sustav.<br>
+                	•	Kolačići i praćenje: povijest pregledavanja, korisničke postavke.<br>
+                <br>
+                Vaše podatke koristimo za:<br>
+                	•	Pružati i poboljšati naše usluge.<br>
+                	•	Odgovorite na Vaše upite i kontaktirajte Vas.<br>
+                	•	Analizirati korištenje stranice kako bi poboljšao korisničko iskustvo.<br>
+                <br>
+                Vaše podatke ne prodajemo niti iznajmljujemo. Međutim, možemo ga podijeliti sa:<br>
+                	•	Naši tehnički partneri (pružatelji usluga hostinga, analitički alati).<br>
+                	•	Pravna tijela ako to zahtijeva zakon.<br>
+                <br>
+                Provodimo sigurnosne mjere kako bismo zaštitili vaše podatke od neovlaštenog pristupa, izmjene ili otkrivanja.<br>
+                <br>
+                Imate pravo na:<br>
+                	•	Pristup vašim osobnim podacima.<br>
+                	•	Zatražite ispravke ili brisanje.<br>
+                	•	Prigovor na obradu podataka.<br>
+                <br>
+                Za ostvarivanje svojih prava kontaktirajte nas na [KONTAKT EMAIL].<br>
+                <br>
+                Možemo ažurirati ovu politiku. Sve izmjene bit će prikazane na ovoj stranici.<br>
+                <br>
+                Ako imate pitanja, kontaktirajte nas na [KONTAKT EMAIL].<br>
             </div>
         </div>
     </section>
@@ -61,12 +112,45 @@
         <div class="background" onclick="urlStatus.update('')"></div>
         <div class="container">
             <div class="top">
-                <div class="name">Posao</div>
+                <div class="name">Upit za posao</div>
                 <div class="leave" id="leave_job" onclick="urlStatus.update('')">delete</div>
             </div>
-            <span style="display: flex; width: 100%; height: 1px; border-radius: 90px; background-color: rgb(238, 224, 35);"></span>
+            <span style="display: flex; width: 100%; height: 1px; border-radius: 90px; background-color: rgba(238, 224, 35, 0.4);"></span>
             <div class="content">
-
+                <fieldset>
+                    <legend>Situacija</legend>
+                    <select id="choix" name="choix">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Drugo Ime</legend>
+                    <input type="text" id="name"/>
+                </fieldset>
+                <fieldset>
+                    <legend>Ime</legend>
+                    <input type="text" id="firstname"/>
+                </fieldset>
+                <fieldset>
+                    <legend>Email</legend>
+                    <input type="email" id="email"/>
+                </fieldset>
+                <fieldset>
+                    <legend>Telefon</legend>
+                    <input type="tel" id="phone"/>
+                </fieldset>
+                <fieldset>
+                    <legend>Kratka poruka</legend>
+                    <textarea id="description" rows="6"></textarea>
+                </fieldset>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    Važna napomena: Vaši podaci će biti tretirani kao strogo povjerljivi.
+                </div>
+                <div class="right" id="button-job" onclick="sendEmail()">Pošalji zahtjev</div>
             </div>
         </div>
     </section>
