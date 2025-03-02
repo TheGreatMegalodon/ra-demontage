@@ -51,3 +51,17 @@ var urlStatus = {
         }
     }
 };
+
+const Lightbox = {
+    open: function(imgElement) {
+        document.querySelector('body').classList.toggle('visible');
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        lightboxImg.src = imgElement.src;
+        lightbox.style.display = 'flex';
+    },
+    close: function() {
+        document.querySelector('.lightbox').style.display = 'none';
+        document.querySelector('body').classList.toggle('visible');
+    }
+}

@@ -504,6 +504,63 @@ header {
     }
 }
 
+.gallery-contain {
+    display: flex;
+    margin-top: 75px;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 80vw;
+    margin-left: 10vw;
+    & .title {
+        display: flex;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    & .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        & img {
+            width: 20vw;
+            height: 20vh;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: rgba(238, 224, 35, 0.4);
+            border: none;
+            transition: ease 0.3s;
+            box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.6);
+            &:hover {
+                transform: scale(1.06);
+                border-radius: 24px;
+                filter: grayscale(0.6);
+            }
+        }
+    }
+    .lightbox {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        z-index: 10;
+        & img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+    }
+}
+
 footer {
     background: linear-gradient(40deg, rgb(34, 33, 37) 0%, rgb(49, 49, 46)80%, rgb(34, 33, 37)100%);
     height: fit-content;
