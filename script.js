@@ -13,7 +13,6 @@ function redirectToSite(url) {
 }
 
 function sendEmail() {  // todo:   https://www.emailjs.com/
-    urlStatus.update('');
     /*
     emailjs.init("TON_USER_ID"); // Remplace par ton User ID
     emailjs.send("TON_SERVICE_ID", "TON_TEMPLATE_ID", {
