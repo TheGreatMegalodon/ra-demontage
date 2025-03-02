@@ -691,6 +691,14 @@ footer {
         flex-direction: column;
         gap: 20px;
     }
+    .gallery-contain {
+        width: 90vw;
+        margin-left: 5vw;
+        & .gallery img {
+            width: 25vw;
+            height: 25vh;
+        }
+    }
 }
 
 @media only screen and (max-width: 780px) {
@@ -753,6 +761,14 @@ footer {
         margin-left: 10vw;
         text-align: center;
     }
+    .gallery-contain {
+        width: 90vw;
+        margin-left: 5vw;
+        & .gallery img {
+            width: 35vw;
+            height: 20vh;
+        }
+    }
     .ttla {
         font-size: 22px !important;
     }
@@ -786,6 +802,14 @@ footer {
         & .contact-boxes {
             font-size: 14px;
             gap: 10px;
+        }
+    }
+    .gallery-contain {
+        width: 95vw;
+        margin-left: 2.5vw;
+        & .gallery img {
+            width: 35vw;
+            height: 15vh;
         }
     }
     footer .align-left .sep {
