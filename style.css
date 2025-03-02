@@ -258,6 +258,7 @@ header {
         justify-content: center;
         font-size: 26px;
         & .title {
+            text-align: center;
             font-size: x-small;
             font-style: italic;
         }
@@ -534,9 +535,13 @@ footer {
 }
 
 @media only screen and (max-width: 1060px) {
-    .first, .second {
-        width: 70%;
-        margin-left: 15%;
+    .first {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+    .second {
+        width: 80vw;
+        margin-left: calc( 10vw - 20px );
     }
     .fifth {
         width: 80%;
@@ -558,16 +563,20 @@ footer {
     .first {
         flex-direction: column;
         & img {
+            height: 40vh;
             width: 100%;
             object-fit: cover;
             object-position: center;
         }
     }
     .fifth {
-        width: 60%;
-        margin-left: 20%;
+        width: 80vw;
+        margin-left: 10vw;
         & .card {
             width: 110%;
+            & img {
+                height: 30vh;
+            }
         }
         & .card .description {
             padding: 10px;
@@ -606,11 +615,25 @@ footer {
         }
     }
     .fourth {
-        width: 70%;
-        margin-left: 15%;
+        width: 80vw;
+        margin-left: 10vw;
+        text-align: center;
     }
     .ttla {
         font-size: 22px !important;
+    }
+    footer {
+        & .align-right {
+            font-size: 16px;
+        }
+        & .align-left {
+            & .rights {
+                font-size: 16px;
+            }
+            & .pol-conf {
+                display: none !important;
+            }
+        }
     }
 }
 
@@ -630,5 +653,8 @@ footer {
             font-size: 14px;
             gap: 10px;
         }
+    }
+    footer .align-left .sep {
+        display: none;
     }
 }
