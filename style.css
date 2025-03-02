@@ -517,6 +517,7 @@ footer {
         align-items: center;
         justify-content: start;
         margin-left: 25px;
+        gap: 0;
         & .pol-conf {
             cursor: pointer;
             border-radius: 90px;
@@ -526,6 +527,9 @@ footer {
             &:hover {
                 background-color: rgba(238, 224, 35, 0.1);
             }
+        }
+        & .rights {
+            margin-right: 10px;
         }
     }
     & .align-right {
