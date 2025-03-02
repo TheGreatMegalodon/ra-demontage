@@ -50,9 +50,41 @@
                 <div class="name">Privacy Policy</div>
                 <div class="leave" id="leave_privacy-policy" onclick="urlStatus.update('')">delete</div>
             </div>
-            <span style="display: flex; width: 100%; height: 1px; border-radius: 90px; background-color: rgb(238, 224, 35);"></span>
+            <span style="display: flex; width: 100%; height: 1px; border-radius: 90px; background-color: rgba(238, 224, 35, 0.4);"></span>
             <div class="content">
-                <div class="button"></div>
+                Last updated: [DATE] <br>
+                <br>
+                Welcome to Rafael-Technik. We highly value the protection of your personal data.<br>
+                This policy explains what information we collect, how we use it, and your rights regarding your data. <br>
+                <br>
+                We may collect the following types of data:<br>
+                	•	Personal Data: Name, email address, phone number (if voluntarily provided).<br>
+                	•	Technical Data: IP address, browser type, operating system.<br>
+                	•	Cookies and Tracking: Browsing history, user preferences.<br>
+                    <br>
+                We use your data to:<br>
+                	•	Provide and improve our services.<br>
+                	•	Respond to your inquiries and contact you.<br>
+                	•	Analyze site usage to enhance the user experience.<br>
+                    <br>
+                We do not sell or rent your data. However, we may share it with:<br>
+                	•	Our technical partners (hosting providers, analytics tools).<br>
+                	•	Legal authorities if required by law.<br>
+                    <br>
+                We implement security measures to protect your information from unauthorized access, modification, or disclosure.<br>
+                <br>
+                You have the right to:<br>
+                	•	Access your personal data.<br>
+                	•	Request corrections or deletion.<br>
+                	•	Object to data processing.<br>
+                    <br>
+                To exercise your rights, contact us at [CONTACT EMAIL].<br>
+                <br>
+                Our site uses cookies to enhance your experience. You can manage them through your browser settings.<br>
+                <br>
+                We may update this policy. Any modifications will be displayed on this page.<br>
+                <br>
+                If you have any questions, contact us at [CONTACT EMAIL]. <br>
             </div>
         </div>
     </section>
@@ -64,9 +96,42 @@
                 <div class="name">Job Inquiry</div>
                 <div class="leave" id="leave_job" onclick="urlStatus.update('')">delete</div>
             </div>
-            <span style="display: flex; width: 100%; height: 1px; border-radius: 90px; background-color: rgb(238, 224, 35);"></span>
+            <span style="display: flex; width: 100%; height: 1px; border-radius: 90px; background-color: rgba(238, 224, 35, 0.4);"></span>
             <div class="content">
-
+                <fieldset>
+                    <legend>Situation</legend>
+                    <select id="choix" name="choix">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Name</legend>
+                    <input type="text" id="name"/>
+                </fieldset>
+                <fieldset>
+                    <legend>Firstname</legend>
+                    <input type="text" id="firstname"/>
+                </fieldset>
+                <fieldset>
+                    <legend>Email</legend>
+                    <input type="email" id="email"/>
+                </fieldset>
+                <fieldset>
+                    <legend>Phone</legend>
+                    <input type="tel" id="phone"/>
+                </fieldset>
+                <fieldset>
+                    <legend>Short message</legend>
+                    <textarea id="description" rows="6"></textarea>
+                </fieldset>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    Important note: Your data will not be passed on to third parties and will be treated as strictly confidential. We will reply shortly after your request, for more informations.
+                </div>
+                <div class="right" id="button-job" onclick="urlStatus.update('')">Send request</div>
             </div>
         </div>
     </section>
