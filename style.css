@@ -2,14 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 html {
-    --main-color: rgb(238, 55, 35);
+    --main-color1: rgb(238, 55, 35);
+    --main-color2: rgb(238, 55, 35);
+    --main-color3: rgb(238, 55, 35);
+    --main-color4: rgb(238, 55, 35);
+    --main-color5: rgb(238, 55, 35);
     user-select: none;
 }
 
 body {
     cursor: default;
     background-color: rgb(50, 49, 54);
-    color: var(--main-color);
+    color: var(--main-color1);
     font-family: 'Raleway';
     padding: 0;
     margin: 0;
