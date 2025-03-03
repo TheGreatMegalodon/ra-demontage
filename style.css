@@ -4,7 +4,8 @@
 html {
     --text-color: aliceblue;
     --title-color: rgb(244, 63, 43);
-    --icons-color: rgb(244, 227, 43);
+    --title-color2: rgba(244, 63, 43, 0.8);
+    --icons-color: rgba(244, 227, 43, 0.8);
     --icons-color2: rgba(244, 227, 43, 0.3);
     --main-color1: rgb(244, 63, 43);
     --main-color2: rgba(244, 63, 43, 0.8);
@@ -40,10 +41,10 @@ header {
     .img-back { 
         display: flex;
         align-self: center;
-        width: 600px;
+        width: 500px;
         z-index: 0;
         opacity: 0.2;
-        object-position: 0px -100px;
+        object-position: 0px -132px;
     }
     & .header-top {
         position: fixed;
@@ -227,6 +228,7 @@ header {
             align-items: center;
             gap: 5vw;
             & .name {
+                color: var(--title-color);
                 font-weight: 600;
                 font-size: larger;
             }
@@ -234,6 +236,7 @@ header {
                 font-family: 'Material Symbols Rounded';
                 border: 1px solid var(--main-color1);
                 background-color: var(--main-color5);
+                color: var(--title-color);
                 padding: 5px;
                 border-radius: 5px;
                 transition: ease 0.2s;
@@ -264,13 +267,14 @@ header {
                     padding: 0px 10px;
                     font-size: large;
                     font-weight: 500;
+                    color: var(--title-color2);
                 }
                 & input, textarea, select {
                     background-color: transparent;
                     outline: none;
                     border: none;
                     width: 100%;
-                    color: rgb(178, 178, 178);
+                    color: rgb(197, 197, 197);
                     cursor: pointer;
                     font-size: medium;
                 }
@@ -348,11 +352,13 @@ header {
             text-align: center;
             font-size: x-small;
             font-style: italic;
+            color: var(--title-color);
         }
         & .main-text {
             font-size: larger;
             font-weight: 800;
             text-align: center;
+            color: var(--title-color);
         }
     }
 }
@@ -382,6 +388,7 @@ header {
         display: flex;
         text-align: center;
         margin: 25px 0;
+        color: var(--text-color);
     }
     & .logo {
         object-fit: contain;
@@ -390,10 +397,12 @@ header {
     & .m-ttl {
         text-align: center;
         line-height: 1.5;
+        color: var(--text-color);
     }
     & .l-ttl {
         text-align: center;
         margin-bottom: 25px;
+        color: var(--text-color);
     }
     & .want-work {
         width: fit-content;
@@ -427,6 +436,7 @@ header {
         flex-direction: column;
         gap: 30px;
         font-size: 26px;
+        color: var(--title-color);
         & div {
             display: flex;
             align-items: center;
@@ -441,6 +451,7 @@ header {
     justify-content: center;
     gap: 25px;
     margin: 75px 0;
+    color: var(--title-color);
 }
 
 .fifth {
@@ -463,6 +474,7 @@ header {
             height: 350px;
             object-fit: cover;
             object-position: center;
+            opacity: 0.9;
         }
         & .description {
             display: flex;
@@ -472,9 +484,11 @@ header {
                 align-items: center;
                 & .logo {
                     height: 55px;
+                    opacity: 0.9;
                 }
                 & .real-title {
                     font-size: 32px;
+                    color: var(--title-color2);
                 }
             }
             & .real-description {
@@ -530,6 +544,7 @@ header {
         display: flex;
         font-size: 30px;
         font-weight: 600;
+        color: var(--title-color);
     }
     & .gallery {
         display: flex;
@@ -626,10 +641,12 @@ footer {
 .ttla {
     font-size: 24px;
     font-weight: 600;
+    color: var(--title-color);
 }
 
 .ttlb {
     font-size: 21px;
+    color: var(--title-color2);
 }
 
 .ttlc {
