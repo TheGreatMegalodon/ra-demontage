@@ -6,7 +6,7 @@ function scrollToElement(id, tp=true) {
         top: targetY,
         behavior: "smooth"
     });
-}
+} 
 
 function redirectToSite(url) {
     window.location.href = url;

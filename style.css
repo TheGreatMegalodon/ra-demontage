@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@400;500;600;700;800;900&family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-html {
+html { 
     --text-color: aliceblue;
     --title-color: rgb(244, 63, 43);
     --title-color2: rgba(244, 63, 43, 0.8);
