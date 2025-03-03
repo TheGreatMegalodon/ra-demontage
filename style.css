@@ -13,7 +13,6 @@ html {
     --main-color4: rgba(244, 63, 43, 0.4);
     --main-color5: rgba(244, 63, 43, 0.2);
     --main-color6: rgba(244, 63, 43, 0.1);
-    user-select: none;
 }
 
 body {
@@ -162,6 +161,17 @@ header {
                 background-color: var(--main-color6);
             }
         }
+        & .not-accessible {
+            color: var(--main-color4);
+            background-color: rgba(0, 0, 0, 0);
+            cursor: not-allowed;
+            & .logo {
+                cursor: not-allowed;
+                & .over {
+                    cursor: not-allowed;
+                }
+            }
+        }
     }
 }
 
@@ -177,6 +187,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
     &:hover {
         background-color: transparent;
         color: var(--icons-color);
@@ -233,6 +244,7 @@ header {
                 font-size: larger;
             }
             & .leave {
+                user-select: none;
                 font-family: 'Material Symbols Rounded';
                 border: 1px solid var(--main-color1);
                 background-color: var(--main-color5);
@@ -339,6 +351,7 @@ header {
         height: 65vh;
         object-fit: cover;
         object-position: -260px;
+        user-select: none;
     }
     & .side-text {
         margin: 25px;
@@ -475,6 +488,7 @@ header {
             object-fit: cover;
             object-position: center;
             opacity: 0.9;
+            user-select: none;
         }
         & .description {
             display: flex;
@@ -562,6 +576,7 @@ header {
             border: none;
             transition: ease 0.3s;
             box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.6);
+            user-select: none;
             &:hover {
                 transform: scale(1.06);
                 border-radius: 24px;
@@ -586,6 +601,7 @@ header {
             max-width: 90%;
             max-height: 90%;
             border-radius: 10px;
+            user-select: none;
         }
     }
 }
