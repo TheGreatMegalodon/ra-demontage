@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 html {
-    --main-color1: rgb(238, 55, 35);
-    --main-color2: rgb(238, 55, 35);
-    --main-color3: rgb(238, 55, 35);
-    --main-color4: rgb(238, 55, 35);
-    --main-color5: rgb(238, 55, 35);
+    --main-color1: rgb(244, 63, 43);
+    --main-color2: rgba(244, 63, 43, 0.8);
+    --main-color3: rgba(244, 63, 43, 0.6);
+    --main-color4: rgba(244, 63, 43, 0.4);
+    --main-color5: rgba(244, 63, 43, 0.2);
+    --main-color6: rgba(244, 63, 43, 0.1);
     user-select: none;
 }
 
@@ -38,7 +39,7 @@ header {
         width: 600px;
         z-index: 0;
         opacity: 0.2;
-        transform: translateY(-75px);
+        object-position: 0px -100px;
     }
     & .header-top {
         position: fixed;
@@ -104,10 +105,10 @@ header {
             cursor: pointer;
             border-radius: 90px;
             transition: 0.2s ease;
-            background-color: rgba(238, 224, 35, 0);
+            background-color: rgba(0, 0, 0, 0);
             padding: 5px 10px;
             &:hover {
-                background-color: rgba(238, 224, 35, 0.1);
+                background-color: var(--main-color6);
             }
         }
     }
@@ -130,7 +131,7 @@ header {
         transition: ease 0.2s;
         & .menu-logo {
             font-size: 23px;
-            color: rgb(238, 224, 35); 
+            color: var(--main-color1);
         }
     }
     & .dropdown {
@@ -141,7 +142,6 @@ header {
         min-width: 150px;
         background-color: rgb(34, 33, 37);
         border-radius: 0 10px 10px 10px;
-        color: rgb(238, 224, 35);
         & .dropdown-item {
             padding: 6px;
             text-decoration: none;
@@ -150,10 +150,9 @@ header {
             cursor: pointer;
             transition: ease 0.2s;
             border-radius: 10px;
-            color: rgb(238, 224, 35);
             align-items: center;
             &:hover {
-                background-color: rgba(238, 224, 35, 0.1);
+                background-color: var(--main-color6);
             }
         }
     }
@@ -163,8 +162,8 @@ header {
     height: 10px;
     width: 10px;
     border-radius: 90px;
-    background: rgba(238, 224, 35, 0.1);
-    color: rgba(238, 224, 35, 0);
+    background: var(--main-color6);
+    color: rgba(0, 0, 0, 0);
     transition: 0.25s ease;
     cursor: pointer;
     font-family: 'Material Symbols Rounded';
@@ -173,13 +172,13 @@ header {
     align-items: center;
     &:hover {
         background-color: transparent;
-        color: rgba(238, 224, 35, 0.5);
+        color: var(--main-color4);
         font-size: 22px;
         justify-content: center;
         align-items: center;
     }
     &:active {
-        text-shadow: 0 0 10px rgba(238, 224, 35, 0.5);
+        text-shadow: 0 0 10px var(--main-color4);
     }
 }
 
@@ -205,7 +204,7 @@ header {
         position: relative;
         z-index: 11;
         background-color: rgba(22, 22, 22, 0.9);
-        border: solid 1px rgba(238, 224, 35, 0.2);
+        border: solid 1px var(--main-color5);
         border-radius: 15px;
         padding: 20px;
         height: fit-content;
@@ -227,15 +226,15 @@ header {
             }
             & .leave {
                 font-family: 'Material Symbols Rounded';
-                border: 1px solid rgb(238, 224, 35);
-                background-color: rgba(238, 224, 35, 0.2);
+                border: 1px solid var(--main-color1);
+                background-color: var(--main-color5);
                 padding: 5px;
                 border-radius: 5px;
                 transition: ease 0.2s;
                 cursor: pointer;
                 font-size: larger;
                 &:hover {
-                    background-color: rgba(238, 224, 35, 0.4);
+                    background-color: var(--main-color4);
                     transform: scale(1.1);
                     border-radius: 8px;
                 }
@@ -287,8 +286,8 @@ header {
             & .right {
                 font-size: larger;
                 font-weight: 600;
-                /* border: 1px solid rgb(238, 224, 35);
-                background-color: rgba(238, 224, 35, 0.2);*/
+                /* border: 1px solid var(--main-color1);
+                background-color: var(--main-color5);*/
                 background-color: rgb(255, 77, 77);
                 color: rgb(71, 15, 15);
                 padding: 8px;
@@ -296,7 +295,7 @@ header {
                 transition: ease 0.2s;
                 cursor: not-allowed;
                 /*&:hover {
-                    background-color: rgba(238, 224, 35, 0.4);
+                    background-color: var(--main-color4);
                     transform: scale(1.05);
                     border-radius: 10px;
                 }*/
@@ -538,7 +537,7 @@ header {
             object-fit: cover;
             cursor: pointer;
             border-radius: 10px;
-            background-color: rgba(238, 224, 35, 0.4);
+            background-color: var(--main-color4);
             border: none;
             transition: ease 0.3s;
             box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.6);
@@ -588,10 +587,10 @@ footer {
             cursor: pointer;
             border-radius: 90px;
             transition: 0.2s ease;
-            background-color: rgba(238, 224, 35, 0);
+            background-color: rgba(0, 0, 0, 0);
             padding: 5px 10px;
             &:hover {
-                background-color: rgba(238, 224, 35, 0.1);
+                background-color: var(--main-color6);
             }
         }
         & .rights {
@@ -604,10 +603,10 @@ footer {
         cursor: pointer;
         border-radius: 90px;
         transition: 0.2s ease;
-        background-color: rgba(238, 224, 35, 0);
+        background-color: rgba(0, 0, 0, 0);
         padding: 5px 10px;
         &:hover {
-            background-color: rgba(238, 224, 35, 0.1);
+            background-color: var(--main-color6);
         }
     }
 }
@@ -661,7 +660,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(238, 224, 35, 0.6);
+    background: var(--main-color3);
 }
 
 @media only screen and (max-width: 1500px) {
