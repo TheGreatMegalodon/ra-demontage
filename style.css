@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@400;500;600;700;800;900&family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+html {
+    --main-color: rgb(238, 55, 35);
+    user-select: none;
+}
+
 body {
     cursor: default;
     background-color: rgb(50, 49, 54);
-    color: rgb(238, 224, 35);
+    color: var(--main-color);
     font-family: 'Raleway';
     padding: 0;
     margin: 0;
@@ -21,7 +26,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-bottom: 35px;
-    overflow: hidden;
+    overflow: hidden; 
     height: 200px;
     .img-back { 
         display: flex;

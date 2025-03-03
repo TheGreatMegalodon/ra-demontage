@@ -14,8 +14,8 @@ function redirectToSite(url) {
 
 function sendEmail() {  // todo:   https://www.emailjs.com/
     /*
-    emailjs.init("TON_USER_ID"); // Remplace par ton User ID
-    emailjs.send("TON_SERVICE_ID", "TON_TEMPLATE_ID", {
+    emailjs.init("USER_ID"); // Remplace par ton User ID
+    emailjs.send("SERVICE_ID", "TEMPLATE_ID", {
         to_name: "Destinataire",
         from_name: "Ton nom",
         message: "Ceci est un test d'e-mail via EmailJS",
