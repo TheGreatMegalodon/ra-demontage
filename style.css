@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 html {
+    --text-color: aliceblue;
+    --title-color: rgb(244, 63, 43);
+    --icons-color: rgb(244, 227, 43);
+    --icons-color2: rgba(244, 227, 43, 0.3);
     --main-color1: rgb(244, 63, 43);
     --main-color2: rgba(244, 63, 43, 0.8);
     --main-color3: rgba(244, 63, 43, 0.6);
@@ -14,7 +18,7 @@ html {
 body {
     cursor: default;
     background-color: rgb(50, 49, 54);
-    color: var(--main-color1);
+    color: var(--text-color);
     font-family: 'Raleway';
     padding: 0;
     margin: 0;
@@ -62,6 +66,7 @@ header {
             overflow: hidden;
             font-size: 25px;
             left: 25px;
+            color: var(--title-color);
             & img {
                 height: 40px;
                 width: auto;
@@ -79,6 +84,7 @@ header {
             height: 50px; 
             position: fixed;
             right: 8px;
+            color: var(--title-color);
             & .logo {
                 cursor: pointer;
                 transition: 0.2s ease;
@@ -162,7 +168,7 @@ header {
     height: 10px;
     width: 10px;
     border-radius: 90px;
-    background: var(--main-color6);
+    background: var(--icons-color2);
     color: rgba(0, 0, 0, 0);
     transition: 0.25s ease;
     cursor: pointer;
@@ -172,13 +178,13 @@ header {
     align-items: center;
     &:hover {
         background-color: transparent;
-        color: var(--main-color4);
+        color: var(--icons-color);
         font-size: 22px;
         justify-content: center;
         align-items: center;
     }
     &:active {
-        text-shadow: 0 0 10px var(--main-color4);
+        text-shadow: 0 0 10px var(--icons-color);
     }
 }
 
