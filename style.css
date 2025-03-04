@@ -119,6 +119,12 @@ header {
                 background-color: var(--main-color6);
             }
         }
+        & .logo {
+            display: none !important;
+            height: 40px;
+            width: auto;
+            padding: 0px !important;
+        }
     }
 }
 
@@ -549,7 +555,7 @@ header {
 }
 
 footer {
-    background: linear-gradient(40deg, rgb(34, 33, 37) 0%, var(--main-color6)80%, rgb(34, 33, 37)100%);
+    background: linear-gradient(-40deg, rgb(34, 33, 37) 0%, rgb(34, 33, 37)100%);
     height: fit-content;
     padding: 25px 0;
     display: flex;
@@ -598,8 +604,9 @@ footer {
     font-weight: 400;
     gap: 1vw;
     background: linear-gradient(-40deg, rgb(34, 33, 37) 0%, rgb(34, 33, 37)100%);
-    height: 5vh;
+    height: 6vh;
     color: var(--text-quiet);
+    box-shadow: 0 0 40px inset rgb(28, 27, 30);
     & p {
         margin: 0;
     }
@@ -756,10 +763,13 @@ footer {
             align-items: center;
             justify-content: space-between;
             margin-right: auto;
-            padding: 2px 15px 2px 15px;
-            border-radius: 90px;
+            padding: 2px 15px 2px 9px;
+            border-radius: 190px;
             background-color: rgb(34, 33, 37);
             left: 10px;
+        }
+        & .logo {
+            display: flex !important;
         }
     }
     .card .description .title {
@@ -786,21 +796,22 @@ footer {
     }
     footer {
         & .align-right {
-            font-size: 16px;
+            display: none !important;
         }
         & .align-left {
-            & .rights {
-                font-size: 16px;
-            }
-            & .pol-conf {
-                display: none !important;
-            }
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100vw;
+            font-size: 16px;
         }
     }
     .me-gg {
         flex-direction: column;
         height: fit-content;
         gap: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         p {
             margin: 5px;
         }
