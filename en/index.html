@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ra Demontage</title>
+    <title>Ra Demontage - en</title>
     <link rel="icon" href="https://raw.githubusercontent.com/TheGreatMegalodon/ra-demontage/refs/heads/main/storage/ra-demontage.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,200"/>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -14,7 +14,7 @@
     <meta content="Ra Demontage" property="og:title">
     <meta content="We are reliable, flexible and customer-oriented." property="og:description">
     <meta content="https://www.ra-demontage.com" property="og:url">
-    <meta content="https://raw.githubusercontent.com/TheGreatMegalodon/ra-demontage/refs/heads/main/storage/ra-demontage.png" property="og:image">
+    <meta content="https://raw.githubusercontent.com/TheGreatMegalodon/ra-demontage/refs/heads/main/storage/ra-demontage-red.png" property="og:image">
     <meta content="var(--main-color1)" data-react-helmet="true" name="theme-color">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -26,10 +26,10 @@
             <div class="title">Ra Demontage</div>
         </div>
         <div class="header-align-right">
-            <div class="action-menu">
+            <!-- <div class="action-menu">
                 <button class="menu-button" style="font-family: 'Material Symbols Rounded';"><div class="menu-logo">g_translate</div></button>
                 <div class="dropdown">
-                    <a class="dropdown-item not-accessible"> <!-- onclick="redirectToSite('https://www.ra-demontage.de')" -->
+                    <a class="dropdown-item" onclick="redirect.in('')">
                         <div class="logo">
                             <span class="over">
                                 <img src="https://raw.githubusercontent.com/TheGreatMegalodon/ra-demontage/main/storage/flags/Flag_of_Germany.png" alt="">
@@ -45,7 +45,7 @@
                             English
                         </div>
                     </a>
-                    <a class="dropdown-item not-accessible"> <!-- onclick="redirectToSite('https://www.ra-demontage.de/cr')" -->
+                    <a class="dropdown-item" onclick="redirect.in('/cr')">
                         <div class="logo">
                             <span class="over">
                                 <img src="https://raw.githubusercontent.com/TheGreatMegalodon/ra-demontage/main/storage/flags/Flag_of_Croatia.png" alt="">
@@ -55,10 +55,8 @@
                     </a>
                 </div>
             </div>
-            <span class="sep" style="margin-left: 10px;">language</span>
+            <span class="sep" style="margin-left: 10px;">language</span> -->
             <div onclick="urlStatus.update('privacy-policy');" class="pol-conf">Privacy Policy</div>
-            <span class="sep">engineering</span>
-            <div onclick="urlStatus.update('job');" class="work">Job</div>
         </div>
     </div>
 </header>
@@ -109,47 +107,32 @@
         </div>
     </section>
 
-    <section id="job" class="">
+    <section id="impressum" class="">
         <div class="background" onclick="urlStatus.update('')"></div>
         <div class="container">
             <div class="top">
-                <div class="name">Job Inquiry</div>
+                <div class="name">Impressum</div>
                 <div class="leave" id="leave_job" onclick="urlStatus.update('')">delete</div>
             </div>
             <span style="display: flex; width: 100%; height: 1px; border-radius: 90px; background-color: var(--main-color4);"></span>
             <div class="content">
-                <fieldset>
-                    <legend>Situation</legend>
-                    <select id="choix" name="choix">
-                        <option value="1"></option>
-                    </select>
-                </fieldset>
-                <fieldset>
-                    <legend>Name</legend>
-                    <input type="text" id="name"/>
-                </fieldset>
-                <fieldset>
-                    <legend>Firstname</legend>
-                    <input type="text" id="firstname"/>
-                </fieldset>
-                <fieldset>
-                    <legend>Email</legend>
-                    <input type="email" id="email"/>
-                </fieldset>
-                <fieldset>
-                    <legend>Phone</legend>
-                    <input type="tel" id="phone"/>
-                </fieldset>
-                <fieldset>
-                    <legend>Short message</legend>
-                    <textarea id="description" rows="6"></textarea>
-                </fieldset>
-            </div>
-            <div class="bottom">
-                <div class="left">
-                    Important note: Your data will be treated as strictly confidential.
-                </div>
-                <div class="right" id="button-job" onclick="sendEmail()">Send request</div>
+                <h2>General informations</h2>
+                <p>
+                    Zeiloch 15, D-76646 Bruchsal <br>
+                    RA Demontage UG
+                </p>
+                <p>
+                    Manager: Bukvic A
+                </p>
+                <h2>Contact</h2>
+                <p>
+                    Phone: +49 173 7808817 <br>
+                    E-mail: bukvic.a@ra-demontage.de
+                </p>
+                <h2>VAT ID</h2>
+                <p>
+                    Amtsgericht Mannheim HRB 753619
+                </p>
             </div>
         </div>
     </section>
@@ -163,18 +146,6 @@
                 We are reliable, <br>
                 flexible, and<br>
                 customer oriented.</div>
-        </div>
-    </section>
-
-    <div class="ttla boubacar" style="margin-bottom: 50px; font-size: 30px;">Have a question? Call us!</div>
-    <section class="third" id="third">
-        <div class="contact-boxes">
-            <div class="phone"><span class="symbol">phone_in_talk</span>+49 173 7808 817</div>
-            <div class="email"><span class="symbol">mail</span>bukvic.a@ra-demontage.hr</div>
-        </div>
-        <div class="contact-boxes">
-            <div class="phone"><span class="symbol">phone_in_talk</span>+49 172 704 7753</div>
-            <div class="email"><span class="symbol">mail</span>jurkic.i@ra-demontage.hr</div>
         </div>
     </section>
 
@@ -195,6 +166,14 @@
         </div>
         <div class="lightbox" onclick="Lightbox.close()">
             <img id="lightbox-img" src="">
+        </div>
+    </section>
+
+    <div class="ttla boubacar" style="margin-top: 70px; margin-bottom: 40px; font-size: 30px;">Have a question? Call us!</div>
+    <section class="third" id="third">
+        <div class="contact-boxes">
+            <div class="phone"><span class="symbol">phone_in_talk</span>+49 173 7808817</div>
+            <div class="email"><span class="symbol">mail</span>bukvic.a@ra-demontage.de</div>
         </div>
     </section>
 
@@ -308,7 +287,6 @@
         <div class="ttlb m-ttl boubacarr">We have a professional team <br> Which always applies the highest level of quality.</div>
         <span style="display: flex; width: 60%; height: 2px; border-radius: 90px; background-color: var(--text-color); margin: 35px 20%;"></span>
         <div class="ttla l-ttl boubacarr">Do you want to become part of our team?</div>
-        <div onclick="urlStatus.update('job');" class="want-work">Send Inquiry</div>
     </section>
 
 </body>
@@ -317,8 +295,14 @@
     <div class="ttlb align-left" style="display: flex; gap: 15px;">
         <div class="rights">© 2025. Ra Demontage</div>
         <span class="sep" style="font-size: 28px;">verified_user</span>
-        <div onclick="urlStatus.update('privacy-policy');" class="pol-conf">Privacy Policy</div>
+        <div onclick="urlStatus.update('impressum');" class="work">Posao</div>
     </div>
     <div onclick="scrollToElement('top', false)" class="ttlb align-right">To top ↑</div>
 </footer>
+
+<div class="me-gg">
+    <p>Website <span>provided by Leon ŠTEFANAC</span></p>
+    <p>and <span>handmade by Gabriel JAGUENEAU</span></p>
+</div>
+
 </html>

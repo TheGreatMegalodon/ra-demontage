@@ -6,25 +6,15 @@ function scrollToElement(id, tp=true) {
         top: targetY,
         behavior: "smooth"
     });
-} 
-
-function redirectToSite(url) {
-    window.location.href = url;
 }
 
-function sendEmail() {  // todo:   https://www.emailjs.com/
-    /*
-    emailjs.init("USER_ID"); // Remplace par ton User ID
-    emailjs.send("SERVICE_ID", "TEMPLATE_ID", {
-        to_name: "Destinataire",
-        from_name: "Ton nom",
-        message: "Ceci est un test d'e-mail via EmailJS",
-        reply_to: "tonemail@example.com"
-    }).then(
-        response => console.log("E-mail envoyé avec succès !", response),
-        error => console.error("Erreur lors de l'envoi de l'e-mail", error)
-    );
-    */
+const redirect = {
+    in: function(path) {
+        window.location.replace(window.location.origin + window.location.pathname + path);
+    },
+    out: function(url) {
+        window.open(url, "_blank");
+    }
 }
 
 var urlStatus = {
