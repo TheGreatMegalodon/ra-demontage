@@ -26,7 +26,7 @@
             <div class="title">Ra Demontage</div>
         </div>
         <div class="header-align-right">
-            <!-- <div class="action-menu">
+            <div class="action-menu" style="display: none;">
                 <button class="menu-button" style="font-family: 'Material Symbols Rounded';"><div class="menu-logo">g_translate</div></button>
                 <div class="dropdown">
                     <a class="dropdown-item" onclick="redirect.in('')">
@@ -55,7 +55,7 @@
                     </a>
                 </div>
             </div>
-            <span class="sep" style="margin-left: 10px;">language</span> -->
+            <!-- <span class="sep" style="margin-left: 10px;">language</span> -->
             <img class="logo" src="https://raw.githubusercontent.com/TheGreatMegalodon/ra-demontage/refs/heads/main/storage/ra-demontage.png" alt="logo">
             <div onclick="urlStatus.update('privacy-policy');" class="pol-conf">Politika privatnosti</div>
         </div>
@@ -123,12 +123,14 @@
                     RA Demontage UG
                 </p>
                 <p>
-                    Menadžer: Bukvic A
+                    Director: Bukvic Ahmet <br>
+                    Co-Director: Olga Goldstein <br>
+                    Authorized representative: Covic Jasmin <br>
                 </p>
                 <h2>Contact</h2>
                 <p>
                     Telefon: +49 173 7808817 <br>
-                    E-mail: bukvic.a@ra-demontage.de
+                    E-mail: info@ra-demontage.de
                 </p>
                 <h2>PDV ID</h2>
                 <p>
@@ -152,7 +154,7 @@
     </section>
 
     <section class="gallery-contain">
-        <div class="title">Galerija</div>
+        <div class="title">Galerija slika</div>
         <div class="gallery">
             <img src="https://raw.githubusercontent.com/TheGreatMegalodon/ra-demontage/refs/heads/main/storage/gallery/20190616_151824_11.jpg" onclick="Lightbox.open(this)">
             <img src="https://raw.githubusercontent.com/TheGreatMegalodon/ra-demontage/refs/heads/main/storage/gallery/20191219_081547_10.jpg" onclick="Lightbox.open(this)">
@@ -171,11 +173,22 @@
         </div>
     </section>
 
-    <div class="ttla boubacar" style="margin-top: 70px; margin-bottom: 40px; font-size: 30px;">Imate pitanje? Nazovite nas!</div>
+    <div class="ttla boubacar" style="margin-top: 70px; margin-bottom: 40px; font-size: 30px; width: 80vw; margin-left: 10vw; text-align: center;">Imate pitanje? Nazovite nas!</div>
     <section class="third" id="third">
         <div class="contact-boxes">
-            <div class="phone"><span class="symbol">phone_in_talk</span>+49 173 7808817</div>
-            <div class="email"><span class="symbol">mail</span>bukvic.a@ra-demontage.de</div>
+            <div class="name">Ahmet Bukvic</div>
+            <div class="connect"><span class="symbol">phone_in_talk</span>+49 152 14394073</div>
+            <div class="connect"><span class="symbol">mail</span>bukvic.a@ra-demontage.de</div>
+        </div>
+        <div class="contact-boxes">
+            <div class="name">Olga Goldstein</div>
+            <div class="connect"><span class="symbol">phone_in_talk</span>+49 176 99678592</div>
+            <div class="connect"><span class="symbol">mail</span>goldstein.o@ra-demontage.de</div>
+        </div>
+        <div class="contact-boxes">
+            <div class="name">Jasmin Covic</div>
+            <div class="connect"><span class="symbol">phone_in_talk</span>+49 162 5603980</div>
+            <div class="connect"><span class="symbol">mail</span>covic.j@ra-demontage.de</div>
         </div>
     </section>
 
@@ -303,7 +316,7 @@
 
 <div class="me-gg">
     <p>Website <span>provided by Leon ŠTEFANAC</span></p>
-    <p>and <span>handmade by Gabriel JAGUENEAU</span></p>
+    <p>and <span>handmade by <a class="link" onclick="redirect.out('https://gabriel-jagueneau.github.io/Portfolio/')">Gabriel JAGUENEAU</a></span></p>
 </div>
 
 </html>
