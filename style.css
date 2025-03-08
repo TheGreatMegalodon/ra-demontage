@@ -190,14 +190,14 @@ header {
     background: var(--icons-color2);
     color: rgba(0, 0, 0, 0);
     transition: 0.25s ease;
-    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     user-select: none;
     & img {
-        height: 0px;
+        height: 30px;
         width: auto;
+        opacity: 0;
         transition: 0.25s ease;
         filter: sepia(100%) saturate(500%) opacity(0.8);
         &:active {
@@ -209,6 +209,7 @@ header {
         justify-content: center;
         align-items: center;
         & img {
+            opacity: 1;
             height: 24px !important;
             width: auto;
         }
